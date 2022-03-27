@@ -46,7 +46,7 @@ public class LinkList {
     public void show() {
         Node node = head.next;
         for (int i = 0; i < size; i++) {
-            System.out.println(node.data);
+            System.out.println(node + ", next " + node.next);
             node = node.next;
         }
         System.out.println();
@@ -132,14 +132,15 @@ public class LinkList {
         LinkList list = new LinkList();
         list.insert(new Integer(0), 0);
         list.insert(new Integer(1), 1);
+        list.insert(new Integer(11), 1);
+//        list.insert(new Integer(2), 2);
+//        list.insert(new Integer(3), 3);
+
+        list.show();
+
         list.insert(new Integer(2), 2);
-        list.insert(new Integer(3), 3);
 
-        list.show();
-
-        System.out.println(list.remove(3));
-        System.out.println();
-        list.show();
+//        list.show();
 
 
 //        LinkList list2 = new LinkList();
@@ -154,7 +155,8 @@ class Node {
     // 指针域
     public Node next;
 
-    public Node() {}
+    public Node() {
+    }
 
     public Node(Object obj) {
         data = obj;
