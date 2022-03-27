@@ -154,14 +154,10 @@ class Node {
     // 指针域
     public Node next;
 
-    public Node() {
-        data = null;
-        next = null;
-    }
+    public Node() {}
 
     public Node(Object obj) {
         data = obj;
-        next = null;
     }
 
     @Override
