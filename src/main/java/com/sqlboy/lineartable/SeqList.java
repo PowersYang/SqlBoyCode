@@ -1,4 +1,4 @@
-package com.sqlboy.linertable;
+package com.sqlboy.lineartable;
 
 /**
  * 顺序表

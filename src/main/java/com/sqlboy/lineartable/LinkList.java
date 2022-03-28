@@ -1,4 +1,4 @@
-package com.sqlboy.linertable;
+package com.sqlboy.lineartable;
 
 public class LinkList {
     private Node head;
