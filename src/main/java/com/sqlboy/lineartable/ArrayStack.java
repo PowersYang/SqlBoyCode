@@ -1,5 +1,8 @@
 package com.sqlboy.lineartable;
 
+/**
+ * 栈的顺序结构实现
+ */
 public class ArrayStack {
 
     class StackNode {

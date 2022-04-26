@@ -1,5 +1,8 @@
 package com.sqlboy.lineartable;
 
+/**
+ * 两栈共享空间
+ */
 public class ShareStack {
 
     class StackNode {

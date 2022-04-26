@@ -1,5 +1,8 @@
 package com.sqlboy.lineartable;
 
+/**
+ * 双向链表
+ */
 public class DoubleLinkList {
     DoubleNode head;
     int size;

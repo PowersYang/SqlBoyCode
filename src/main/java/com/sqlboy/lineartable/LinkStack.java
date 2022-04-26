@@ -1,5 +1,8 @@
 package com.sqlboy.lineartable;
 
+/**
+ * 栈的链式结构实现
+ */
 public class LinkStack {
     class StackNode {
         public Object data;

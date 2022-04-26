@@ -1,5 +1,8 @@
 package com.sqlboy.lineartable;
 
+/**
+ * 环形链表
+ */
 public class CycleLinkList {
     // 头结点
     private Node head;
