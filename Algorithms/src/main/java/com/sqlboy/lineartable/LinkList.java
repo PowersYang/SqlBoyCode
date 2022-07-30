@@ -1,5 +1,8 @@
 package com.sqlboy.lineartable;
 
+/**
+ * 链表
+ */
 public class LinkList {
     private Node head;
     private int size;
