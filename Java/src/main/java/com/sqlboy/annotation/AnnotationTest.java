@@ -6,17 +6,13 @@ import java.util.List;
 
 public class AnnotationTest {
     public static void main(String[] args) throws Exception {
-        MyAnnotationHandler myAnnotationHandler = new MyAnnotationHandler();
-        myAnnotationHandler.handler();
+        MyAnnotationHandler.handle(MyService.class);
     }
 }
 
 class MyAnnotationHandler {
-    public void handler() throws Exception {
-        Class<MyService> clazz = MyService.class;
-        MyService myService = clazz.newInstance();
+    public static void handle(Class clazz) throws Exception {
         Method[] methods = clazz.getDeclaredMethods();
-
         List<Method> beforeMethodList = new ArrayList<>();
         List<Method> testMethodList = new ArrayList<>();
         List<Method> afterMethodList = new ArrayList<>();
@@ -35,20 +31,20 @@ class MyAnnotationHandler {
             }
         }
 
+        Object obj = clazz.newInstance();
         for (Method testMethod : testMethodList) {
             for (Method beforeMethod : beforeMethodList) {
-                beforeMethod.invoke(myService);
+                beforeMethod.invoke(obj);
             }
 
-            testMethod.invoke(myService);
+            testMethod.invoke(obj);
 
             for (Method afterMethod : afterMethodList) {
-                afterMethod.invoke(myService);
+                afterMethod.invoke(obj);
             }
         }
     }
 }
-
 
 class MyService {
     @MyBefore
