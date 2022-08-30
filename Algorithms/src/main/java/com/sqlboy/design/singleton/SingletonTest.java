@@ -1,4 +1,4 @@
-package com.sqlboy.disign.singleton;
+package com.sqlboy.design.singleton;
 
 public class SingletonTest {
     public static void main(String[] args) {

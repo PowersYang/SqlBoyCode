@@ -1,4 +1,4 @@
-package com.sqlboy.factory;
+package com.sqlboy.design.factory;
 
 public class SimpleFactoryTest {
     public static void main(String[] args) {
