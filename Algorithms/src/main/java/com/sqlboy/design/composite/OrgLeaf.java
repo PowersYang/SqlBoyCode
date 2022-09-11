@@ -13,7 +13,6 @@ public class OrgLeaf extends OrgComponent {
 
     @Override
     public int getSubOrgCount() {
-        // 叶子结点没有子结点，所以直接返回0
         return subOrgs.size();
     }
 

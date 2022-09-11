@@ -30,7 +30,7 @@ public class CompositeTest {
         System.out.println("学校总人数：" + root.getUserCount());
         System.out.println("学校子结点总人数：" + root.getSubOrgUserCount());
 
-        System.out.println(school1.getSubOrgCount());
+        System.out.println("计算机学院子结点：" + school1.getSubOrgCount());
     }
 }
 
