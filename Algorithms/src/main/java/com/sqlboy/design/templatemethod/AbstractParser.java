@@ -24,10 +24,9 @@ public abstract class AbstractParser {
     /**
      * 模板方法
      *
-     * @throws IOException
-     * @throws SQLException
+     * @throws Exception
      */
-    public final void upload() throws IOException, SQLException, ClassNotFoundException {
+    public final void upload() throws Exception {
         List<String> fileData = getFileData(filePath);
         boolean checkResult = checkData(fileData);
         if (checkResult) {
