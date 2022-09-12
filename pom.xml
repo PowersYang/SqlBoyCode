@@ -11,6 +11,7 @@
   <modules>
     <module>Algorithms</module>
     <module>Java</module>
+      <module>DesignPattern</module>
   </modules>
 
   <name>SqlBoyCode</name>
