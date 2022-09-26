@@ -1,6 +1,6 @@
 package com.sqlboy.design.bridge.color;
 
-public class YellowColor implements Color{
+public class YellowColor implements Color {
 
     @Override
     public void makeColor() {

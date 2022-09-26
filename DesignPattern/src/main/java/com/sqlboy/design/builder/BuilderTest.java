@@ -1,5 +1,15 @@
 package com.sqlboy.design.builder;
 
+interface Builder {
+    void setAcc(String acc);
+
+    void setReversingRadar(String reversingRadar);
+
+    void setElectricTailgate(String electricTailgate);
+
+    void setLaneChangeAssist(String laneChangeAssist);
+}
+
 public class BuilderTest {
     public static void main(String[] args) {
 //        new Automobile("2.0T", "双离合", "非独立悬架", null, null, "有电尾门", "有并线辅助");
@@ -115,16 +125,6 @@ class Automobile {
     public String toString() {
         return "Automobile{" + "engine='" + engine + '\'' + ", gearbox='" + gearbox + '\'' + ", chassisSuspension='" + chassisSuspension + '\'' + ", acc='" + acc + '\'' + ", reversingRadar='" + reversingRadar + '\'' + ", electricTailgate='" + electricTailgate + '\'' + ", laneChangeAssist='" + laneChangeAssist + '\'' + '}';
     }
-}
-
-interface Builder {
-    void setAcc(String acc);
-
-    void setReversingRadar(String reversingRadar);
-
-    void setElectricTailgate(String electricTailgate);
-
-    void setLaneChangeAssist(String laneChangeAssist);
 }
 
 class AutomobileBuilder implements Builder {

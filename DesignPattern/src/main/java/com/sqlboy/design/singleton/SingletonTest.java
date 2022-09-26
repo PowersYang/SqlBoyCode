@@ -103,10 +103,10 @@ public class SingletonTest {
  * 双重检查
  */
 class Singleton {
+    private static volatile Singleton instance;
+
     private Singleton() {
     }
-
-    private static volatile Singleton instance;
 
     public static Singleton getInstance() {
         if (instance == null) {

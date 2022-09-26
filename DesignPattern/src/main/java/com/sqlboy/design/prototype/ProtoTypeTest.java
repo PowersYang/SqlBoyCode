@@ -1,5 +1,9 @@
 package com.sqlboy.design.prototype;
 
+interface ProtoType {
+    ProtoType clone();
+}
+
 public class ProtoTypeTest {
     public static void main(String[] args) throws InterruptedException {
         // 假设 monkey01 为孙悟空
@@ -16,10 +20,6 @@ public class ProtoTypeTest {
         Monkey monkey03 = (Monkey) monkey01.clone();
         System.out.println(monkey03.forceValue);
     }
-}
-
-interface ProtoType {
-    ProtoType clone();
 }
 
 class Monkey implements ProtoType {

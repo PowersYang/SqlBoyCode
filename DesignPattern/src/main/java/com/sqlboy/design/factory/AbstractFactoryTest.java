@@ -1,5 +1,45 @@
 package com.sqlboy.design.factory;
 
+interface Computer {
+    /**
+     * 安装屏幕
+     */
+    void setScreen();
+
+    /**
+     * 安装电池
+     */
+    void setBattery();
+}
+
+interface Phone {
+    /**
+     * 安装屏幕
+     */
+    void setScreen();
+
+    /**
+     * 安装电池
+     */
+    void setBattery();
+}
+
+interface AbstractFactory {
+    /**
+     * 工厂生产电脑接口
+     *
+     * @return
+     */
+    Computer makeComputer();
+
+    /**
+     * 共产生产手机接口
+     *
+     * @return
+     */
+    Phone makePhoto();
+}
+
 public class AbstractFactoryTest {
     public static void main(String[] args) {
         // 苹果工厂
@@ -26,18 +66,6 @@ public class AbstractFactoryTest {
     }
 }
 
-interface Computer {
-    /**
-     * 安装屏幕
-     */
-    void setScreen();
-
-    /**
-     * 安装电池
-     */
-    void setBattery();
-}
-
 class MacBook implements Computer {
     @Override
     public void setScreen() {
@@ -62,18 +90,6 @@ class XiaomiComputer implements Computer {
     }
 }
 
-interface Phone {
-    /**
-     * 安装屏幕
-     */
-    void setScreen();
-
-    /**
-     * 安装电池
-     */
-    void setBattery();
-}
-
 class IPhone implements Phone {
     @Override
     public void setScreen() {
@@ -96,23 +112,6 @@ class XiaomiPhone implements Phone {
     public void setBattery() {
         System.out.println("为小米手机安装电池");
     }
-}
-
-
-interface AbstractFactory {
-    /**
-     * 工厂生产电脑接口
-     *
-     * @return
-     */
-    Computer makeComputer();
-
-    /**
-     * 共产生产手机接口
-     *
-     * @return
-     */
-    Phone makePhoto();
 }
 
 class AppleFactory implements AbstractFactory {

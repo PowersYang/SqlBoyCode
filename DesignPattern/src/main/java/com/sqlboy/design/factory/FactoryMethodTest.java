@@ -85,6 +85,7 @@ abstract class Factory {
 class TelevisionFactory extends Factory {
     /**
      * 子类根据需求创建不同的产品
+     *
      * @return
      */
     @Override

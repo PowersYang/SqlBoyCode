@@ -4,8 +4,8 @@ import com.sqlboy.design.bridge.color.Color;
 
 public abstract class Shape {
 
-    protected Color color;
     public float r;
+    protected Color color;
 
     public Shape(Color color, float r) {
         this.color = color;

@@ -1,11 +1,11 @@
 package com.sqlboy.design.bridge;
 
 import com.sqlboy.design.bridge.color.BlueColor;
+import com.sqlboy.design.bridge.color.Color;
 import com.sqlboy.design.bridge.color.RedColor;
 import com.sqlboy.design.bridge.color.YellowColor;
 import com.sqlboy.design.bridge.shape.Circle;
 import com.sqlboy.design.bridge.shape.Square;
-import com.sqlboy.design.bridge.color.Color;
 
 public class BridgeTest {
     public static void main(String[] args) {

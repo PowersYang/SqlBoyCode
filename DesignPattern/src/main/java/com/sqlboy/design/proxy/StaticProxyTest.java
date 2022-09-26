@@ -1,5 +1,14 @@
 package com.sqlboy.design.proxy;
 
+/**
+ * 抽象代理行为
+ */
+interface Worker {
+
+    void action();
+
+}
+
 public class StaticProxyTest {
     public static void main(String[] args) {
         // 被代理对象
@@ -16,15 +25,6 @@ public class StaticProxyTest {
         // 代理对象通过自己的方法，间接调用了被代理对象的方法
         carWorker.action();
     }
-}
-
-/**
- * 抽象代理行为
- */
-interface Worker {
-
-    void action();
-
 }
 
 /**

@@ -3,6 +3,13 @@ package com.sqlboy.design.decorator;
 import java.util.ArrayList;
 import java.util.List;
 
+interface Automobile {
+    // 配置清单
+    List<String> confList = new ArrayList<>();
+
+    void makeAutomobile();
+}
+
 public class DecoratorTest {
     public static void main(String[] args) {
         Automobile automobile = new BaseAutomobile();
@@ -14,13 +21,6 @@ public class DecoratorTest {
         automobile = new ReversingRadarDecorator(automobile);
         automobile.makeAutomobile();
     }
-}
-
-interface Automobile {
-    // 配置清单
-    List<String> confList = new ArrayList<>();
-
-    void makeAutomobile();
 }
 
 /**

@@ -11,7 +11,7 @@ public class GroupLeader implements Handler {
 
     @Override
     public boolean handle(int days) {
-        if (days == 1){
+        if (days == 1) {
             System.out.println("小组领导可以批");
             return true;
         } else {
