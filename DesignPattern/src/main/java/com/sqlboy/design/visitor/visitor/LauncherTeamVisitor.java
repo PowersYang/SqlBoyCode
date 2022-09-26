@@ -1,8 +1,8 @@
 package com.sqlboy.design.visitor.visitor;
 
-import com.sqlboy.design.visitor.product.ComputerMetrics;
-import com.sqlboy.design.visitor.product.PhoneMetrics;
-import com.sqlboy.design.visitor.product.TelevisionMetrics;
+import com.sqlboy.design.visitor.metrics.ComputerMetrics;
+import com.sqlboy.design.visitor.metrics.PhoneMetrics;
+import com.sqlboy.design.visitor.metrics.TelevisionMetrics;
 
 /**
  * 内容运营团队视角，只能访问日活和活跃时长两个指标

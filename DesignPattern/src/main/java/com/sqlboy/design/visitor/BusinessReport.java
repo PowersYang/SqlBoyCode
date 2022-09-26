@@ -1,9 +1,9 @@
 package com.sqlboy.design.visitor;
 
-import com.sqlboy.design.visitor.product.ComputerMetrics;
-import com.sqlboy.design.visitor.product.PhoneMetrics;
-import com.sqlboy.design.visitor.product.ProductMetrics;
-import com.sqlboy.design.visitor.product.TelevisionMetrics;
+import com.sqlboy.design.visitor.metrics.ComputerMetrics;
+import com.sqlboy.design.visitor.metrics.PhoneMetrics;
+import com.sqlboy.design.visitor.metrics.ProductMetrics;
+import com.sqlboy.design.visitor.metrics.TelevisionMetrics;
 import com.sqlboy.design.visitor.visitor.Visitor;
 
 import java.util.LinkedList;

@@ -1,13 +1,13 @@
-package com.sqlboy.design.visitor.product;
+package com.sqlboy.design.visitor.metrics;
 
 import com.sqlboy.design.visitor.visitor.Visitor;
 
 /**
- * 电脑指标
+ * 电视指标
  */
-public class ComputerMetrics extends ProductMetrics {
+public class TelevisionMetrics extends ProductMetrics {
 
-    public ComputerMetrics(String name) {
+    public TelevisionMetrics(String name) {
         super(name);
     }
 

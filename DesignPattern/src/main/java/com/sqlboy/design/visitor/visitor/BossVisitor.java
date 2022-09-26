@@ -1,8 +1,8 @@
 package com.sqlboy.design.visitor.visitor;
 
-import com.sqlboy.design.visitor.product.ComputerMetrics;
-import com.sqlboy.design.visitor.product.PhoneMetrics;
-import com.sqlboy.design.visitor.product.TelevisionMetrics;
+import com.sqlboy.design.visitor.metrics.ComputerMetrics;
+import com.sqlboy.design.visitor.metrics.PhoneMetrics;
+import com.sqlboy.design.visitor.metrics.TelevisionMetrics;
 
 /**
  * 老板视角可以访问所有指标

@@ -1,4 +1,4 @@
-package com.sqlboy.design.visitor.product;
+package com.sqlboy.design.visitor.metrics;
 
 import com.sqlboy.design.visitor.visitor.Visitor;
 
