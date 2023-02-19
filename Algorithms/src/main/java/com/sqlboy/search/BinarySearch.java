@@ -15,7 +15,6 @@ public class BinarySearch {
         System.out.println(binarySearch.search(arrays, 0, arrays.length - 1, 2));
     }
 
-
     /**
      * 循环实现
      *

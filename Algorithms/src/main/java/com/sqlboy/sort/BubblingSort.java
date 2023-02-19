@@ -17,9 +17,8 @@ public class BubblingSort {
                 if (arrays[j] > arrays[j + 1]) {
                     flag = true;
                     temp = arrays[j];
-                    arrays[j] = arrays[j + 1];
+                    arrays[j] = arrays[ j + 1];
                     arrays[j + 1] = temp;
-
                 }
             }
 
